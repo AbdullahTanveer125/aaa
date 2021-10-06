@@ -288,7 +288,7 @@ body{
     }
     /* Content-1 */
     .content-1{
-        height: 380px;
+        height: 350px;
         width: 100%;
     }
     .content-1 div{
@@ -321,6 +321,11 @@ body{
         font-size: 1em;
     }
     
+    .last-section{
+        height: 40px;
+        font-size: 1em;
+        padding-top: 30px;
+    }
     
     }
     
