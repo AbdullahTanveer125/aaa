@@ -12,19 +12,20 @@ body{
     flex-wrap: wrap;
 }
 .header{
-    background-color: mediumpurple;
+    background-color:brown;
     color:white;
-    font-size: 1.5em;
-    margin-top: -30px;
+    border-bottom-style: solid;
+    margin-top: -1px;
     width: 100%;
 }
 .header h1{
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
+    font-size: 2.5em;
+    text-align: center;
 }
 .menu-container{
     display: flex;
     background-color:slategrey;
-    margin-top:-30px;
     width: 100%;
 }
 .menu-child{
@@ -47,7 +48,8 @@ body{
 }
 
 .content-1 div{
-    color:darkturquoise;
+    color:rgb(159, 213, 223);;
+    text-align: justify;
     margin-top: 30px;
     font-size: 4em;
     width: 70%;
@@ -59,18 +61,21 @@ body{
 /*double-paragraph */
 .double-paragraph{
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     justify-content: space-around;
     margin-top:20px ;
 }
 .content-2{
     border-style: solid;
+    text-align: justify;
     width: 30%;
     padding: 15px;
 }
 .content-3{
-    background-color: blueviolet;
+    background-color: brown;
     color: white;
+    text-align: justify;
     width: 30%;
     padding: 15px;
 }
@@ -79,25 +84,27 @@ body{
 
     /* quries-section */
 .quries-section{
+    font-size: 1em;
     text-align: center;
     margin-top: 60px;
 }
 .quries-section button{
-    background-color:cadetblue;
+    background-color:lightseagreen;
     font-size: 170%;
-    font-weight: 200;
+    font-weight: 400;
     padding:3px 8px;
     border-radius: 5%;
 }    
 .link{
     text-decoration: none;
     color: cornsilk;
+    font-weight: 400;
 }
 
 
 /* last-section */
 .last-section{
-    height: 80px;
+    height: 40px;
     width: 100%;
     background-color: dimgray;
     color: white;
@@ -107,225 +114,144 @@ body{
 }
 
 
+        
 
-/* Media Quries-1*/
-@media screen and (min-width: 1200px) and (max-width:1370px){
 
-    .content-1 div{
-            font-size: 2.5em;
+/* ----Media Quries-2----(for normal mobile)*/
+@media screen and (min-width:300px) and (max-width:400px){
+
+body{
+        font-size: 12px;
     }
-    .content-1{
-        height: 400px;
+    
+.header{
+        margin-top: -1px;
         width: 100%;
     }
-    
-    }
-        
-    
-    
-    /* Media Quries-2*/
-    @media screen and (min-width: 901px) and (max-width:1200px){
-    
-    .content-1 div{
-        font-size: 2.5em;
-    }
-    .content-1{
-        height: 370px;
-        width: 100%;
-    }
-    }
-    
-    /* Media Quries-3*/
-    @media screen and (min-width: 550px) and (max-width:900px){
-        
-        body{
-            font-size: 12px;
-        }
-    
-    /* Menu */
-    
-    .header{
+.header h1{
+        padding: 0px;
         font-size: 1em;
+    }
+    
+.menu-child{
+       font-size: 0.9em;
+        padding: 3px 6px; 
+    }
+    
+.content-1{
+        height: 500px;
+    }
+    
+.content-1 div{
+        margin-top: 30px;
+        font-size: 2em;
+        width: 80%;
+    }
+    
+.double-paragraph{
         width: 100%;
-        margin-top: -23px;
+        justify-content: space-evenly;
     }
-    .header h1{
-        padding: 7px;
+.content-2{
+        width: 40%;
+        padding: 10px;
     }
-    .menu-container{
-        
-        margin-top:-20px;
-        width: 100%;
-    }
-    .menu-child{
-        font-size: 1.5em;
-    }
-    /* Content-1 */
-    .content-1{
-        height: 550px;
-        width: 100%;
-    }
-    .content-1 div{
-        font-size: 3em;
-        width: 70%;
-    }
-    
-    /*double-paragraph */
-    .double-paragraph{
-        width: 90%;
-    }
-    .content-2{
-        width: 35%;
-    }
-    .content-3{
-        width: 35%;
+.content-3{
+        width: 40%;
+        padding: 10px;
     }
     
     
     
-        /* quries-section */
-    
-    .quries-section button{
-        font-size: 140%;
-    }    
-    
-    
-    /* last-section */
-    .last-section{
-        font-size: 1.5em;
-    }
-    
-    
-    }
-    
-    /* Media Quries-4 */
-    @media screen and (min-width: 400px) and (max-width:550px){
-        
-        body{
-            font-size: 10px;
-        }
-    
-    /* Menu */
-    
-    .header{
+.quries-section{
+        margin-top: 40px;
         font-size: 0.8em;
-        width: 100%;
-        margin-top: -10px;
     }
-    .header h1{
+.quries-section button{
+
+        font-size: 90%;
+        font-weight: 200;
+        padding:3px 8px;
+    }  
+    
+    
+.last-section{
+        width: 97%;
+        height: 20px;
+        font-size: 1em;
         padding: 5px;
     }
-    .menu-container{
-        
-        margin-top:-15px;
-        width: 100%;
-    }
-    .menu-child{
-        font-size: 1.3em;
-    }
-    /* Content-1 */
-    .content-1{
-        height: 350px;
-        width: 100%;
-    }
-    .content-1 div{
-        font-size: 2.5em;
-        width: 70%;
-    }
     
-    /*double-paragraph */
-    .double-paragraph{
-        width: 95%;
-    }
-    .content-2{
-        width: 40%;
-    }
-    .content-3{
-        width: 40%;
-    }
-    
-    
-    
-        /* quries-section */
-    
-    .quries-section button{
-        font-size: 120%;
-    }    
-    
-    
-    /* last-section */
-    .last-section{
-        font-size: 1.3em;
-    }
-    
-    
-    }
-    
-    /* Media Quries-5 */
-    @media screen and (max-width:400px){
-        
-        body{
+}
+
+
+
+
+
+/* ----Media Quries-2----(for small mobile)*/
+@media screen and (max-width:300px){
+
+    body{
             font-size: 10px;
         }
-    
-    /* Menu */
-    
-    .header{
-        font-size: 0.8em;
-        width: 100%;
-        margin-top: -5px;
-    }
-    .header h1{
-        padding: 3px;
-    }
-    .menu-container{
         
-        margin-top:-10px;
-        width: 100%;
-    }
+    .header{
+            margin-top: -1px;
+            width: 100%;
+        }
+    .header h1{
+            padding: 0px;
+            font-size: 0.8em;
+        }
+        
     .menu-child{
-        font-size: 1em;
-    }
-    /* Content-1 */
+           font-size: 0.7em;
+            padding: 2px 4px; 
+        }
+        
     .content-1{
-        height: 350px;
-        width: 100%;
-    }
+            height: 400px;
+        }
+        
     .content-1 div{
-        font-size: 2em;
-        width: 70%;
-    }
-    
-    /*double-paragraph */
+            margin-top: 30px;
+            font-size: 1.7em;
+            width: 90%;
+        }
+        
     .double-paragraph{
-        width: 100%;
-    }
+            width: 100%;
+            justify-content: space-evenly;
+        }
     .content-2{
-        width: 45%;
-    }
+            width: 60%;
+            padding: 5px;
+        }
     .content-3{
-        width: 45%;
-    }
-    
-    
-    
-        /* quries-section */
-    
+            margin-top: 5px;
+            width: 80%;
+            padding: 5px;
+        }
+        
+        
+        
+    .quries-section{
+        font-size: 0.6em;
+            margin-top: 20px;
+        }
     .quries-section button{
-        font-size: 100%;
-    }    
     
-    
-    /* last-section */
+            font-size: 80%;
+            font-weight: 200;
+            padding:3px 8px;
+        }  
+        
+        
     .last-section{
-        font-size: 1em;
+            width: 95%;
+            height: 20px;
+            font-size: 0.8em;
+            padding: 5px;
+        }
+        
     }
-    
-    .last-section{
-        height: 40px;
-        font-size: 1em;
-        padding-top: 30px;
-    }
-    
-    }
-    
