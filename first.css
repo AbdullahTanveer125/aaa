@@ -15,6 +15,7 @@ body{
     background-color:rgb(143, 101, 228);
     color:white;
     border-bottom-style: solid;
+    border-bottom-color:orangered;
     margin-top: -1px;
     width: 100%;
 }
@@ -73,7 +74,7 @@ body{
     padding: 15px;
 }
 .content-3{
-    background-color: brown;
+    background-color:rgb(143, 101, 228);
     color: white;
     text-align: justify;
     width: 30%;
@@ -114,7 +115,79 @@ body{
 }
 
 
+/* ----Media Quries-1----(for tab)*/
+@media screen and (min-width:600px) and (max-width:830px){
+
+        body{
+                font-size: 14px;
+            }
+            
+        .header{
+            border-bottom-width: 3px;
+                margin-top: -1px;
+                width: 100%;
+            }
+        .header h1{
+                padding: 0px;
+                font-size: 1.6em;
+            }
+            
+        .menu-child{
+               font-size: 1.2em;
+                padding: 5px 7px; 
+            }
+            
+        .content-1{
+                height: 450px;
+            }
+            
+        .content-1 div{
+                margin-top: 50px;
+                font-size: 2.7em;
+                width: 80%;
+            }
+            
+        .double-paragraph{
+                width: 100%;
+                justify-content: space-evenly;
+            }
+        .content-2{
+                width: 40%;
+                padding: 10px;
+            }
+        .content-3{
+            background-color:rgb(143, 101, 228);
+                width: 40%;
+                padding: 10px;
+            }
+            
+            
+            
+        .quries-section{
+                margin-top: 40px;
+                font-size: 0.8em;
+            }
+        .quries-section button{
         
+                font-size: 93%;
+                font-weight: 200;
+                padding:4px 8px;
+            }  
+            
+            
+        .last-section{
+                width: 98%;
+                height: 20px;
+                font-size: 1em;
+                padding: 5px;
+            }
+            
+        }
+        
+        
+        
+
+
 
 
 /* ----Media Quries-2----(for normal mobile)*/
@@ -126,25 +199,26 @@ body{
     
 .header{
     background-color:rgb(143, 101, 228);
+    border-bottom-width: 2px;
         margin-top: -1px;
         width: 100%;
     }
 .header h1{
         padding: 0px;
-        font-size: 1em;
+        font-size: 1.4em;
     }
     
 .menu-child{
-       font-size: 0.9em;
-        padding: 3px 6px; 
+       font-size: 1em;
+        padding: 4px 6px; 
     }
     
 .content-1{
-        height: 500px;
+        height: 400px;
     }
     
 .content-1 div{
-        margin-top: 30px;
+        margin-top: 50px;
         font-size: 2em;
         width: 80%;
     }
@@ -190,7 +264,7 @@ body{
 
 
 
-/* ----Media Quries-2----(for small mobile)*/
+/* ----Media Quries-3----(for small mobile)*/
 @media screen and (max-width:300px){
 
     body{
@@ -198,52 +272,54 @@ body{
         }
         
     .header{
+        border-bottom-width: 2px;
             margin-top: -1px;
             width: 100%;
         }
     .header h1{
             padding: 0px;
-            font-size: 0.8em;
+            font-size: 1.4em;
         }
         
     .menu-child{
-           font-size: 0.7em;
-            padding: 2px 4px; 
+           font-size: 0.9em;
+            padding: 3px 4px; 
         }
         
     .content-1{
-            height: 400px;
+            height: 350px;
         }
         
     .content-1 div{
-            margin-top: 30px;
-            font-size: 1.7em;
+            margin-top: 40px;
+            font-size: 2em;
             width: 90%;
         }
         
     .double-paragraph{
+        flex-wrap: wrap;
             width: 100%;
             justify-content: space-evenly;
         }
     .content-2{
-            width: 60%;
-            padding: 5px;
+            width: 70%;
+            padding: 10px;
         }
     .content-3{
-            margin-top: 5px;
+        margin-top: 4px;
             width: 80%;
-            padding: 5px;
+            padding: 8px;
         }
         
         
         
     .quries-section{
-        font-size: 0.6em;
-            margin-top: 20px;
+            margin-top: 40px;
+            font-size: 0.8em;
         }
     .quries-section button{
     
-            font-size: 80%;
+            font-size: 90%;
             font-weight: 200;
             padding:3px 8px;
         }  
@@ -251,9 +327,10 @@ body{
         
     .last-section{
             width: 95%;
-            height: 20px;
-            font-size: 0.8em;
-            padding: 5px;
+            height: 15px;
+            font-size: 1em;
+            padding: 4px;
         }
         
     }
+    
